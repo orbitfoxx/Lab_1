@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Nёrd's - Напишите нам!</title>
+	<link rel="stylesheet" href="style/normalize.css">
+	<link rel="stylesheet" href="style/main-css.css">
+</head>
+<body class="write-us">
+
+	<header class="main-header">
+		<div class="container">
+
+			<div class="main-logo">
+				<img src="img/main-logo.png" alt="nёrd's logo" width="139" height="56">
+			</div>
+
+			<nav class="main-nav clearfix">
+				<ul class="main-menu">
+					<li><a href="index.html">Студия</a></li>
+					<li><a href="#">Клиенты</a></li>
+					<li><a href="store.html">Магазин</a></li>
+					<li><a href="#">Контакты</a></li>
+				</ul>
+				<ul class="user-card">
+					<li><a href="#">Корзина</a></li>
+				</ul>
+			</nav>
+
+			<section class="welcome">
+				<h1>Напишите нам!</h1>
+			</section>
+
+		</div>
+	</header>			
+
+
+<!--FEEDBACK-FORM -->
+
+<div class="modal-content clearfix">
+	<form class="feedback-form" action="/echo" method="post">
+
+		<div class="field-left">
+			<label for="name-id">Ваше имя:</label>
+			<input type="text" name="name-field" id="name-id" placeholder="Представьтесь, пожалуйста">
+		</div>
+
+		<div class="field-right">
+			<label for="email-id">Ваш e-mail:</label>
+			<input type="email" name="email-field" id="email-id" placeholder="Для отправки ответа">
+		</div>
+
+		<div class="field-message">
+			<label for="message-id">Текст письма:</label>
+			<textarea name="message-field" id="message-id" placeholder="В свободной форме"></textarea>
+		</div>
+
+		<div class="field-left">
+			<button type="submit" class="btn btn-submit">Отправить</button>
+		</div>
+
+		<div class="field-right">
+			<button type="reset" class="btn btn-cancel">Отмена</button>
+		</div>
+
+	</form>
+</div>
+
+	<footer class="main-footer">
+
+	<section class="map">
+		<img class="map-marker" src="img/map-marker.png" width="231" height="190" alt="Nёrds">
+		<div class="container">
+		  <div class="map-canvas" id="map-canvas"></div>
+          <article class="contacts">
+            <h3>Nёrds Design Studio</h3>
+            <p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+            <p>тел. +7 (812) 275-75-75</p>
+            <!--<a class="btn contacts-btn" href="write-us.html">Напишите нам</a>-->
+          </article>
+		</div>
+	</section>
+
+	<section class="footer-social clearfix">
+		<div class="container">
+          <div class="social-links">
+            <a class="social-btn social-btn-vk" href="#vk">
+              <span class="icon-vk"></span>
+            </a>
+            <a class="social-btn social-btn-fb" href="#fb">
+              <span class="icon-facebook"></span>
+            </a>
+            <a class="social-btn social-btn-inst" href="#inst">
+              <span class="icon-instagramm"></span>
+            </a>
+          </div>
+          <div class="social-text">
+            <h2>Давайте дружить, это выгодно!</h2>
+            <p>Скидка 10% для друзей из социальных сетей.</p>
+          </div>
+		</div>
+	</section>
+	</footer>
+
+</body>
+</html>
